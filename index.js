@@ -30,7 +30,7 @@ app.post('/email', async (req, res) => {
         from: 'maximiliano.bisurgi@gmail.com', 
         to: process.env.TO || 'maximiliano.bisurgi@gmail.com',
         subject: `Resultado encuesta de ${email}`, 
-        html: `<p>${nombre} de ${edad} años de edad, cuyo mail es ${email} tardo ${seconds} en resolver el problema</p>`
+        html: `<p>${nombre} de ${edad} años de edad, cuyo mail es ${email} tardo ${seconds} segundos en resolver el problema</p>`
       };
 
       await new Promise((resolve, reject) => {
