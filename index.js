@@ -44,6 +44,7 @@ app.post('/email', async (req, res) => {
         
         res.status(200).json({status: 'ok'});
     } catch (err) {
+        console.log('err', err);
         res.status(500).json({err});
     }
 });
